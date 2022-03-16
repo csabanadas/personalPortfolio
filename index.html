@@ -21,15 +21,15 @@
                     <span class="toggle"></span>
                     <span class="toggle"></span>
                 </div>
-                <li class="menu-item"><a href="">About Me</a></li>
-                <li class="menu-item"><a href="">Skills</a></li>
-                <li class="contactMe menu-item"><a href="">Contact Me</a></li>
+                <li class="menu-item"><a href="#about">About Me</a></li>
+                <li class="menu-item"><a href="#skill">Skills</a></li>
+                <li class="contactMe menu-item"><a href="#contact">Contact Me</a></li>
             </ul>
             <div id="mobileNavigation">
                 <ul id="mobileItems">
-                    <li><a href="">About Me</a> </li>
-                    <li><a href="">Skills</a> </li>
-                    <li class="contactMe-mobile"><a href="">Contact Me</a> </li>
+                    <li><a href="#about">About Me</a> </li>
+                    <li><a href="#skill">Skills</a> </li>
+                    <li class="contactMe-mobile"><a href="#contact">Contact Me</a> </li>
                 </ul>
             </div>
         </nav>
@@ -42,7 +42,7 @@
 
 <!-- Section 1 -->
 
-<section class="section-one">
+<section class="section-one" id="about">
     <div class="title-container">
         <h2>ABOUT ME</h2>
     </div>
@@ -59,7 +59,7 @@
 
 <!-- Section 2 -->
 
-<section class="section-two">
+<section class="section-two" id="skill">
     <div class="title-container second-title">
         <h2>SKILLS</h2>
     </div>
@@ -70,7 +70,7 @@
         <div class="skill-items"><i class="fa-brands fa-git-square"></i><p>GIT</p></div>
         <div class="skill-items"><i class="fa-brands fa-google"></i><p>SEO</p></div>
         <div class="skill-items"><i class="fa-solid fa-rectangle-ad"></i><p>PPC</p></div>
-        <div class="skill-items"><i class="fa-solid fa-rectangle-ad"></i><p>ANALYTICS/RESEARCH</p></div>
+        <div class="skill-items"><i class="fa-solid fa-rectangle-ad"></i><p>ANALYTICS</p></div>
         <div class="skill-items"><i class="fa-brands fa-figma"></i><p>FIGMA</p></div>
     </div>
 </section>
@@ -90,22 +90,27 @@
         <div class="portfolio-item"></div>
     </div>
 </section>
-<section class="contact-me">
-    <div class="title-container third-title">
+
+<!-- Section 4 -->
+
+<section class="section-four" id="contact">
+    <div class="title-container fourth-title">
         <h2>CONTACT</h2>
     </div>
-    <div class="form-cta">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque nobis dolorum sequi debitis tempore esse, commodi vero reiciendis corrupti, at dignissimos in fugit necessitatibus ea aut deleniti sapiente magnam quisquam?</p>
+    <div class="form-description">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum consectetur in molestiae ullam recusandae, amet facilis, maxime earum laboriosam libero quo dolores consequuntur beatae voluptatum, quod perspiciatis assumenda voluptate culpa.</p>
     </div>
-    <hr>
-    <form action="">
-        <input type="text" value="" name="name" placeholder="ENTER YOUR NAME" required>
-        <input type="email" required name="email" id="" placeholder="ENTER YOUR EMAIL">
-        <input type="number" placeholder="YOUR PHONE NUMBER" >
-        <textarea rows="4" cols="50" name="comment" form="" placeholder="ENTER YOUR MESSAGE"></textarea>
-        <input type="submit" value="SEND">
+    <form action="" id="form">
+        <input class="input-item" type="text" value="" name="name" placeholder="ENTER YOUR NAME" required>
+        <input class="input-item" type="email" required name="email" id="" placeholder="ENTER YOUR EMAIL">
+        <input class="input-item" type="number" placeholder="YOUR PHONE NUMBER" >
+        <textarea class="input-item" rows="4" cols="50" name="comment" form="" placeholder="ENTER YOUR MESSAGE"></textarea>
+        <input class="input-item" id="submit" type="submit" value="SEND">
     </form>
 </section>
+ <footer>
+     <p>@2022 Csaba Nadas All Rights Reserved. </p>
+ </footer>
 <script src="app.js"></script>
 </body>
 </html>

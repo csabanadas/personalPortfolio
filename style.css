@@ -14,9 +14,7 @@ h2 {
     font-weight: 700;
     letter-spacing: 10px;
 }
-h3 {
 
-}
 p {
     font-size: 2vw;
     letter-spacing: 0.1rem;
@@ -50,7 +48,7 @@ nav {
     z-index: 1;
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 1% 8%;
 }
 .contactMe {
@@ -67,11 +65,13 @@ nav {
     margin: 12px 32px;
 }
 .hero {
-    background: url(background.jpeg) left top no-repeat;
-    background-size: cover ;
+    background: url(image.jpg) top;
+    background-repeat: no-repeat;
+    background-size: 100%;
     height: 800px;
     position: relative;
 }
+
 .hero-text {
     display: flex;
     flex-direction: column;
@@ -256,4 +256,72 @@ nav {
         width: 40vw;
     }
     
+}
+
+/* Section Four */
+
+.section-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 20%;
+    line-height: 2;
+    color: #000000;
+    background-color: #D5E4ED;
+}
+
+.fourth-title {
+    border: 4px solid #000000;
+    margin-bottom: 6rem;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-description {
+    margin-bottom: 3rem;
+}
+
+.input-item {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    background-color: #D5E4ED;
+}
+#submit {
+    width: 30%;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 3vw;
+    font-weight: 700;
+    font-size: 3vw;
+    cursor: pointer;
+    transition: padding 1s ease-in, width 1s ease-in;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+}
+#submit:hover {
+    padding: 20px;
+    width: 40%;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
